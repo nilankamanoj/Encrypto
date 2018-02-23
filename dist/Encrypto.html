@@ -1,0 +1,48 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Encrypto.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJFbmNyeXB0by5qbmxwIj4KICA8aW5mb3JtYXRpb24+CiAgICA8dGl0bGU+RW5jcnlwdG88L3RpdGxlPgogICAgPHZlbmRvcj5uaWxhbmthPC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICA8b2ZmbGluZS1hbGxvd2VkLz4KICA8L2luZm9ybWF0aW9uPgogIDxyZXNvdXJjZXM+CiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IkVuY3J5cHRvLmphciIgc2l6ZT0iMTQxNzIiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8YXBwbGljYXRpb24tZGVzYyBtYWluLWNsYXNzPSJlbmNyeXB0by52aWV3Lk1haW5BY3Rpdml0eSIgIG5hbWU9IkVuY3J5cHRvIiA+CiAgPC9hcHBsaWNhdGlvbi1kZXNjPgogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgo8L2pubHA+Cg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedencrypto.view() {
+        dtjava.embed(
+            {
+                id : 'encrypto.view',
+                toolkit : 'swing',
+                url : 'Encrypto_browser.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJFbmNyeXB0b19icm93c2VyLmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5FbmNyeXB0bzwvdGl0bGU+CiAgICA8dmVuZG9yPm5pbGFua2E8L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4KICAgIDxqYXIgaHJlZj0iRW5jcnlwdG8uamFyIiBzaXplPSIxNDE3MiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogIDwvcmVzb3VyY2VzPgogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImVuY3J5cHRvLnZpZXcuTWFpbkFjdGl2aXR5IiAgbmFtZT0iRW5jcnlwdG8iID4KICA8L2FwcGxldC1kZXNjPgogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgo8L2pubHA+Cg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {
+                onGetSplash : function() {}
+            }
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedencrypto.view);
+</script>
+
+</head><body>
+<h2>Test page for <b>Encrypto</b></h2>
+  <b>Webstart:</b> <a href='Encrypto.jnlp' onclick="return launchApplication('Encrypto.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Encrypto.jnlp">
+  <information>
+    <title>Encrypto</title>
+    <vendor>nilanka</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Encrypto.jar" size="14172" download="eager" />
+  </resources>
+  <application-desc main-class="encrypto.view.MainActivity"  name="Encrypto" >
+  </application-desc>
+  <update check="always"/>
+</jnlp>
